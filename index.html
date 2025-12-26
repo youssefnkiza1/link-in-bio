@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLinks | Verified Digital Identity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔗</text></svg>">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="container">
+        <!-- Profile Header -->
+        <header class="profile-header">
+            <div class="avatar-container">
+                <img src="avatar.jpg" alt="Profile" class="avatar">
+                <div class="avatar-status"></div>
+            </div>
+            
+            <div class="name-container">
+                <h1 class="name">@youssefnkiza</h1>
+                <div class="verified-badge" id="verifiedBadge" title="Verified Account">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            
+            <p class="bio">Full-Stack Developer • Open Source Contributor • Building tools for developers. Passionate about clean code and innovative solutions.</p>
+            
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Essaouira, MA</span>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">42</div>
+                    <div class="stat-label">Repositories</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">1.2k</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">89</div>
+                    <div class="stat-label">Following</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Years</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Terminal Component -->
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-dot red"></div>
+                <div class="terminal-dot yellow"></div>
+                <div class="terminal-dot green"></div>
+                <span class="terminal-title">bash</span>
+            </div>
+            <div class="terminal-content" id="terminalText">
+                $ cat current_status.txt<br>
+                > Currently: Building a SaaS product<br>
+                > Looking for: Open source collaborations<br>
+                > Available for: Consulting & Mentorship<br>
+                $ <span class="cursor">_</span>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links-container">
+            <h2 class="links-title">
+                <i class="fas fa-link"></i>
+                Important Links
+            </h2>
+
+            <!-- Link Cards -->
+            <div class="link-card" data-url="https://github.com/youssefnkiza1">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>GitHub Profile</h3>
+                        <p>Check out my open source projects and contributions</p>
+                    </div>
+                </div>
+                <div class="link-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="link-card" data-url="https://instagram.com/1v4.n9z">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Instagram</h3>
+                        <p>Follow my journey and personal projects</p>
+                    </div>
+                </div>
+                <div class="link-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="link-card" data-url="https://nkiza-portfolio.vercel.app/">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Portfolio Website</h3>
+                        <p>Detailed case studies and project breakdowns</p>
+                    </div>
+                </div>
+                <div class="link-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+           
+
+            <div class="link-card" data-url="https://youssefnkiza1.github.io/Resume/CV_Youssef_Nkiza_Portfolio.pdf">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Resume / CV</h3>
+                        <p>Download my latest resume (PDF)</p>
+                    </div>
+                </div>
+                <div class="link-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Showcase Section -->
+        <div class="projects-showcase">
+            <h2 class="links-title">
+                <i class="fas fa-code"></i>
+                Featured Projects
+            </h2>
+            <div class="project-grid">
+                <div class="project-card" data-url="https://github.com/project1">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>AI Assistant CLI</h4>
+                    <p>Command-line AI assistant with natural language processing and 40+ built-in commands.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">OpenAI</span>
+                        <span class="project-tag">CLI</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-url="https://github.com/project2">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Security Dashboard</h4>
+                    <p>Real-time security monitoring dashboard with threat detection and alert system.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">Cybersecurity</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-url="https://github.com/project3">
+                    <div class="project-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>DevTools Suite</h4>
+                    <p>Collection of 15+ developer productivity tools in a single desktop application.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Electron</span>
+                        <span class="project-tag">TypeScript</span>
+                        <span class="project-tag">Productivity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://web.facebook.com/youssef.nkiza" class="social-link" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com/1v4.n9z" class="social-link" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="tel:+212612200129" class="social-link phone-link" target="_blank">
+                <i class="fas fa-phone"></i>
+           
+            <a href="mailto:nkizayoussef@gmail.com" class="social-link" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+           <p>© 2025 Youssef Nkiza — All rights reserved</p>
+
+            
+            <div class="footer-links">
+                <a href="#" id="toggleThemeLink">Toggle Theme</a>
+                <a href="#" id="viewSourceLink">View Source Code</a>
+                <a href="#" id="analyticsLink">Analytics</a>
+            </div>
+            
+            <p class="footer-info">
+                Last updated: <span id="currentDate"></span> | v2.2.0
+            </p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
